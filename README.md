@@ -15,3 +15,7 @@ here. See the [Releases](../../releases) page for the latest APK download.
 ## Requirements
 
 - Android 8.0 (API 26) or newer.
+
+## License
+
+Proprietary — All Rights Reserved. See [LICENSE](LICENSE).
