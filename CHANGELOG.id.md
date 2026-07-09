@@ -25,11 +25,24 @@ Aplikasi Flutter untuk mengelola router MikroTik (Hotspot & PPP) langsung dari A
 - Fix "berhasil" palsu — print sekarang menunggu printer benar-benar selesai deteksi jenis command (ESC/TSC/CPCL) sebelum mengirim data.
 - QR code pada struk thermal sekarang mengikuti toggle "Tampilkan QR Code" di Template Editor, sama seperti jalur PDF.
 
-### Keamanan build
+### Menu About & Export CSV Laporan Penjualan
+
+- Menu baru "Tentang Aplikasi" (Settings) — versi aplikasi, "Cek
+  Pembaruan" (memeriksa rilis terbaru di repo ini), "Yang Baru"
+  (menampilkan changelog ini), dan link ke repo ini.
+- Tab History di Laporan Penjualan sekarang punya tombol export CSV di
+  sebelah tombol export PDF yang sudah ada.
+
+### Keamanan & ukuran build
 
 - Kode Java/Kotlin native (termasuk plugin printer) di-minify & di-obfuscate (R8/ProGuard).
 - Kode Dart di-obfuscate (`--obfuscate --split-debug-info`) — nama class/fungsi asli tidak lagi terbaca langsung dari APK.
 - Sudah diverifikasi di device fisik: dashboard, koneksi router, dan cetak thermal Bluetooth tetap berfungsi normal setelah hardening.
+- Aset gambar yang kegedean diperkecil (satu gambar 1.5MB yang cuma
+  ditampilkan maks 104dp, dan satu gambar splash duplikat yang tidak
+  terpakai) — hemat ~2.4MB.
+- APK sekarang dipublikasikan terpisah per arsitektur CPU — unduhan
+  `arm64` yang direkomendasikan cuma ~25MB dibanding `universal` ~64MB.
 
 ### Requirement
 

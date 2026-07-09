@@ -38,9 +38,17 @@ and not published here. See [CHANGELOG.md](CHANGELOG.md) for release notes.
 
 ## Install
 
-1. Download the latest APK from [Releases](../../releases/latest).
+1. Download the latest APK from [Releases](../../releases/latest) — pick
+   **`-arm64.apk`** (works on virtually every Android phone from 2015
+   onward, smaller download). Only use the `-universal.apk` one if the
+   arm64 build fails to install on your device.
 2. On your Android device, enable "Install from unknown sources" if prompted.
 3. Open the downloaded APK to install.
+
+> Since this app isn't distributed through the Play Store, Android's
+> Play Protect may warn that it hasn't seen this developer before — this
+> is expected for any sideloaded app and not a sign anything is wrong.
+> Choose "Install anyway" if prompted.
 
 ## Requirements
 

@@ -38,9 +38,17 @@ dipublikasikan di sini. Lihat [CHANGELOG.id.md](CHANGELOG.id.md) untuk catatan r
 
 ## Instalasi
 
-1. Unduh APK terbaru dari [Releases](../../releases/latest).
+1. Unduh APK terbaru dari [Releases](../../releases/latest) — pilih
+   **`-arm64.apk`** (cocok untuk hampir semua HP Android 2015 ke atas,
+   ukuran unduhan lebih kecil). Pakai `-universal.apk` cuma kalau versi
+   arm64 gagal terpasang di HP Anda.
 2. Di HP Android, aktifkan "Install dari sumber tidak dikenal" kalau diminta.
 3. Buka file APK yang sudah diunduh untuk memasang.
+
+> Karena aplikasi ini tidak didistribusikan lewat Play Store, Android
+> Play Protect mungkin memperingatkan "belum pernah melihat developer
+> ini" — ini wajar untuk semua aplikasi sideload, bukan tanda ada yang
+> salah. Pilih "Install anyway" / "Tetap pasang" kalau muncul.
 
 ## Requirement
 
