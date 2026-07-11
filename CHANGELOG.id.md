@@ -2,6 +2,42 @@
 
 🇬🇧 [English](CHANGELOG.md) · 🇮🇩 Bahasa Indonesia
 
+## v1.1.0
+
+### Baru
+
+- **Settings → Appearance**: pilih tema aplikasi (System / Light / Dark), bahasa aplikasi (System / Indonesia / English — "System" mengikuti bahasa HP, fallback ke English), dan slider ukuran tampilan manual (90%–110%).
+- **Share Voucher as Image**: bagikan voucher yang baru dibuat, atau user yang sudah ada (lewat menu ⋮ di User List), sebagai gambar kartu — kode, harga, masa berlaku, QR code auto-login, dan logo Template Editor kalau ada — langsung ke share sheet Android. Jual voucher lewat WhatsApp/Telegram tanpa perlu cetak.
+- Search bar collapsible di layar daftar (User List, PPP Secret/Profile/Active, Hotspot Hosts, User Profile, Vouchers, Sales Report, Quick Print) — disembunyikan di balik ikon search, bukan selalu tampil.
+- Animasi entrance untuk daftar router di layar Sessions.
+
+### Diubah
+
+- Settings di-redesign: tiap item sekarang punya card bergaris sendiri dengan sedikit jarak, tidak lagi dikelompokkan dengan header section polos.
+- Notifikasi in-app (snackbar) di-redesign di seluruh app jadi pill mengambang dengan ikon status berwarna (hijau/merah/oranye).
+- Hint "Tekan sekali lagi untuk keluar" di-redesign ke gaya pill mengambang yang sama.
+- Tema aplikasi sekarang default mengikuti setelan light/dark HP saat instal baru.
+- Tombol app bar diurutkan ulang (search → filter → refresh); tombol filter tidak lagi hilang saat sedang mencari, dan hanya menyala kalau ada filter asli, bukan sekadar kata kunci pencarian.
+- Splash screen awal di-redesign sesuai ikon/tema aplikasi, dengan durasi tampil yang konsisten di semua device.
+- Daftar navigasi app drawer sekarang bisa di-scroll; Disconnect jadi tombol merah terpisah di bawah Settings.
+- Badge "Online" di Dashboard dipindah ke pojok kanan atas kartu router.
+
+### Diperbaiki
+
+- Crash saat startup di beberapa device (ditemukan di Huawei EMUI), disebabkan oleh tema native splash screen.
+- Error "invalid user name or password" yang jarang muncul setelah percobaan login ulang gagal, disebabkan koneksi ke router yang bocor dan tidak pernah tertutup dengan benar.
+- Ikon/warna status bar sekarang sesuai dengan tema light/dark aplikasi, termasuk saat ganti tema secara live.
+- Tombol back Android sekarang menutup search field yang terbuka terlebih dahulu, konsisten di semua layar daftar.
+- Pindah tab di tengah pencarian tidak lagi meninggalkan daftar yang diam-diam masih terfilter kata kunci lama.
+- Bahasa "Ikuti Sistem" sekarang benar-benar mengecek ulang bahasa HP setiap kali aplikasi dibuka.
+- Slider ukuran tampilan sekarang hanya menyimpan sekali saat dilepas, bukan setiap gerakan kecil saat drag.
+- Suhu Dashboard sekarang menampilkan satuan yang benar ("45°C") di semua router.
+- Menghapus jarak berlebih antar-filter di daftar transaksi Laporan Penjualan.
+
+### Requirement
+
+Android 8.0 (API 26) ke atas · router MikroTik dengan RouterOS API aktif (port default `8728`).
+
 ## v1.0.0 — Rilis Awal
 
 Aplikasi Flutter untuk mengelola router MikroTik (Hotspot & PPP) langsung dari Android, tanpa perlu web server perantara.

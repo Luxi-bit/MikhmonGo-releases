@@ -2,6 +2,42 @@
 
 🇬🇧 English · 🇮🇩 [Bahasa Indonesia](CHANGELOG.id.md)
 
+## v1.1.0
+
+### New
+
+- **Settings → Appearance**: choose app theme (System / Light / Dark), app language (System / Indonesian / English — "System" follows your phone's language, falling back to English), and a manual display size slider (90%–110%).
+- **Share Voucher as Image**: share a freshly generated voucher, or any existing user (via the ⋮ menu in User List), as a card image — code, price, validity, an auto-login QR code, and your Template Editor logo if you have one — straight to the Android share sheet. Sell vouchers over WhatsApp/Telegram without printing anything.
+- Collapsible search bar on list screens (User List, PPP Secret/Profile/Active, Hotspot Hosts, User Profile, Vouchers, Sales Report, Quick Print) — hidden behind a search icon instead of always shown.
+- Entrance animation for the router list on the Sessions screen.
+
+### Changed
+
+- Settings redesigned: each item now sits in its own bordered card with breathing room, instead of grouped under plain text section headers.
+- In-app notifications (snackbars) redesigned app-wide into a compact floating pill with a colored status icon (green/red/orange).
+- The "Press back again to exit" hint redesigned into the same floating pill style.
+- App theme now defaults to following your phone's system light/dark setting on a fresh install.
+- App bar buttons reordered (search → filter → refresh); the filter button no longer disappears while searching, and only highlights for an actual filter, not just a search query.
+- Startup splash screen redesigned to match the app icon/theme, with a consistent hold duration on every device.
+- App drawer's navigation list is now scrollable; Disconnect is a separate red button below Settings.
+- Dashboard's "Online" badge moved to the top-right corner of the router card.
+
+### Fixed
+
+- Crash on startup on some devices (observed on Huawei EMUI), caused by the native splash screen theme.
+- Rare "invalid user name or password" error after a failed login retry, caused by a leaked router connection that was never properly closed.
+- Status bar icons/colors now correctly match the app's light/dark theme, including live theme switches.
+- Android back button now closes an open search field first, consistently across every list screen.
+- Switching tabs mid-search no longer leaves the list silently filtered on the old query.
+- "Follow System" language now re-checks your phone's language every time the app is opened.
+- Display size slider now saves only once released, instead of on every drag movement.
+- Dashboard temperature now shows a proper unit ("45°C") on every router.
+- Removed an oversized gap between filters on Sales Report's transaction list.
+
+### Requirements
+
+Android 8.0 (API 26) or newer · a MikroTik router with RouterOS API enabled (default port `8728`).
+
 ## v1.0.0 — Initial Release
 
 Flutter app for managing MikroTik routers (Hotspot & PPP) directly from Android — no intermediary web server required.
