@@ -15,8 +15,7 @@
 
 </div>
 
-This repository hosts **APK releases only** — the source code is private
-and not published here. See [CHANGELOG.md](CHANGELOG.md) for release notes.
+This repository hosts **APK releases only**. See [CHANGELOG.md](CHANGELOG.md) for release notes.
 
 ## Screenshots
 

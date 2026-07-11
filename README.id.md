@@ -15,8 +15,7 @@
 
 </div>
 
-Repo ini **hanya berisi rilis APK** — source code bersifat privat dan tidak
-dipublikasikan di sini. Lihat [CHANGELOG.id.md](CHANGELOG.id.md) untuk catatan rilis.
+Repo ini **hanya berisi rilis APK**. Lihat [CHANGELOG.id.md](CHANGELOG.id.md) untuk catatan rilis.
 
 ## Screenshot
 
